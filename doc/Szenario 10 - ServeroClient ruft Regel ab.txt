@@ -2,6 +2,7 @@ Szenario 9: Externer Server/Client ruft Gruppe aus einem Projekt ab
 
 Will ein externer Server oder ein Client die Regelgruppen eines Projektes abrufen, wird zuerst mit einer internen Abfrage geprüft, ob dieses Projekt für die Öffentlichkeit zugänglich ist oder ob nur die entsprechenden Projektmitglieder dieses Projekt einsehen dürfen.
 Ist das Projekt offen zugänglich, so werden in der Datenbank die Regelgruppen des Projektes ausgelesen, in XML-Format konvertiert und dem externen Server oder Client zurückgegeben.
-Falls das Projekt jedoch nur auf seine Mitglieder beschränkt ist, wird dem Abrufer eine Benachrichtigung ausgegeben. Er muss sich zuerst auf der Webseite einloggen und ein Mitglied des Projektes sein.
-Fragt der Server/Client erneut ab, doch ist er kein berechtigtes Projektmitglied, wird er benachrichtigt, daß er nicht die Rechte zum Auslesen der Regeln besitzt.
+Falls das Projekt jedoch nur auf seine Mitglieder beschränkt ist, wird dem Abrufer ein Fehlercode ausgegeben. 
+Er muss sich zuerst auf der Webseite einloggen und ein Mitglied des Projektes sein.
+Fragt der Server/Client erneut ab, doch ist er kein berechtigtes Projektmitglied, wird erneut ein Fehlercode angezeigt.
 Ansonsten bekommt er die Regeln in XML-Format konvertiert und als XML-Datei zurückgeliefert.
