@@ -7,3 +7,4 @@ Projectmember - Ein User, der Zugriff auf ein bestimmtes Project hat
 User - allgemeiner User ohne bestimmten Zugriff
 internal rule/group- innerhalb eines Projects definiert
 external rule/group - durch URI spezifizierte externe Repositorys
+View - eine Seite, bzw Fenster innerhalb der Webanwendung
