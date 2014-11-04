@@ -1,0 +1,23 @@
+Szenario 1: registriere Benutzer
+
+Der User möchte sich registrieren. Dazu gibt er seinen gewünschten Benutzernamen an.
+Das System schaut nach, ob der Benutzername bereits vorhanden ist.
+1) Benutzername ist vergeben
+Das System macht den Nutzer auf den vergebenen Namen aufmerksam. Er muss einen alternativen Namen auswählen.
+2.)Benutzername ist nicht vergeben
+Es wird ein neuer User-Eintrag in der Datenbank getätigt.
+Der User gibt ein Passwort ein. Das System prüft, ob das Passwort bestimmten Kriterien genügt. 
+Ist dies der Fall, so wird User-Eintrag aktualisiert.
+Der User muss eine E-Mail-Adresse eingeben (2-Mal). Das System prüft, ob die beiden Eingaben übereinstimmen.
+Ist dies der Fall, so wird eine Bestätigungsmail vom System versandt.
+Der User muss den Aktivierungslink anklicken und wird dann auf die Übersichtsseite weitergeleitet.
+
+Szenario 2: 	logge User ein
+Szenario 3: 	User Profil bearbeiten
+Szenario 4: 	Projekt anlegen/bearbeiten/Mitglieder einladen
+Szenario 5: 	Regel/Gruppe anlegen
+Szenario 6:		Regel/Gruppe bearbeiten
+Szenario 7: 	Regel/Gruppe löschen
+Szenario 8: 	Referenzen definieren/bearbeiten
+Szenario 9: 	Externer Server/Client ruft von einem Projekt eine Gruppe ab
+Szenario 10:	Einbindung externer Referenzen
