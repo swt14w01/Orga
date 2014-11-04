@@ -1,0 +1,13 @@
+Regel/Gruppe bearbeiten
+
+Möchte ein Projektmitglied eine Regel/Gruppe bearbeiten, muss er auf der Webseite korrekt eingeloggt sein 
+und in seinem Projekt die Regel/Gruppe anwählen. Das Mitglied kann den Bearbeiten-Button anklicken 
+und gelangt somit in den Bearbeitungsmodus. 
+Regelbearbeitung:  Man kann ID, Severity, Description und Cypher direkt im Textfeld bearbeiten. 
+Geht man ins Textfeld von ID und Cypher, erscheint ein Popup, welches auf die Verweise und möglichen  
+Beeinträchtigung anderer Gruppen hinweist. Bei Bestätigung kann man den Text editieren, ansonsten wird der 
+Fokus auf den Bearbeiten-Button gelegt. Das Mitglied kann den Bearbeitungsvorgang abbrechen, indem er 
+auf den Abbrechen-Button klickt.  Danach gelangt er wieder zur Regelübersicht.
+Gruppenbearbeitung:  Man kann die ID verändern oder Regeln und (von der Aktuellen verschiedene-) Gruppen 
+aus der Gruppe entfernen. Das Mitglied kann den Bearbeitungsvorgang abbrechen, indem er auf den Abbrechen-Button klickt. 
+Danach gelangt er wieder zur Gruppenübersicht.
