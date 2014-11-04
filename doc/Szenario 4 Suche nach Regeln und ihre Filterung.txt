@@ -1,0 +1,17 @@
+Szenario 4 
+Suche nach Regeln und deren Filterung
+
+Der User befindet sich auf der Platform und möchte nach einer Regel/Gruppe suchen.
+Dazu gibt er einen Suchbegriff  in das Suchfeld ein.
+Das System reagiert auf die Tasteneingabe und gleicht diese mit der Datenbank ab.
+Dem User werden sofort sinnvolle automatische Komplettierungsvorschläge geliefert.
+Wählt der User einen der Vorschläge aus und bestätigt seine Auswahl mit der Enter-Taste bzw.
+durch Klicken des Suchen-Buttons, so stellt das System eine Liste der relevantesten Suchergebnisse zusammen und zeigt diese auch an.
+Der User hat nun optional die Möglichkeit, die Ergebnisliste nach Gruppen, Constraints, Concepts zu ordnen.
+
+1.)Ordnen nach Gruppen liefert nur Gruppen als Ergebnis
+2.)Ordnen nach Constrains liefert nur Constrains als Ergebnis
+3.)Ordnen nach Concepts liefert nur Concepts als Ergebnis
+
+
+Alle Suchergebnisse werden mit zusätzlichen Informationen angefüttert (zum Beispiel Beschreibung, ID, etc....)

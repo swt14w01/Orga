@@ -1,0 +1,9 @@
+Szenario 5)
+Regel oder Gruppe hinzufügen
+
+Der User möchte eine Regel/Gruppe hinzufügen. Dazu befindet er sich auf der Seite "Neue Regel/ Gruppe erstellen".
+Er betätigt einen Button, welcher eine neue Ansicht öffnet. Hier wird der User aufgefordert, spezifische Angaben
+bzgl. der neuen Regel/Gruppe zu machen wie beispielsweise ID, Severity, Description und Cypher.
+Das System überprüft die Eingaben auf ihre Gültigkeit (Name schon vergeben,  ungültige Zeichen etc...)
+Wenn die Eingaben valide sind, wird ein neuer Eintrag in der Regeldatenbank mit den entsprechenden Eingaben
+getätigt.
