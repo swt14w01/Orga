@@ -1,6 +1,16 @@
-Ein Projectmember befindet sich innerhalb von einem Project und möchte für eine bestimmte Group oder Rule References hinzufügen. Dazu klickt er auf die entsprechende Group oder Rule, wodurch sich ein View mit den Eigenschaften öffnet.
-Es gibt ein Eingabefeld für eine ID um die Reference zu anderen Groups oder Rules zu definieren. Dieses Eingabefeld bietet automatisch Vorschläge zur Vervollständigung an, die während der Eingabe angezeigt werden. 
-Alternativ kann über einen "Suchen" Button neben dem Eingabefeld auch nach Rules oder Groups gesucht werden. Diese Suche beschränkt sich auf alle Rules und Groups innerhalb des Projects. Die Ergebnisse können auf die gleiche Art gefiltert werden, wie bei der regulären Suche. Mithilfe von Checkboxen können mehrere Rules oder Groups ausgewählt werden, um eine Reference zu diesen zu erstellen. 
-Sollte eine Group geöffnet sein, dann wird die Autovervollständigung und die Suche weitere Groups, Concepts oder Constraints anzeigen. Sollte eine Rule geöffnet sein, dann werden nur Concepts und Querytemplates angezeigt. Innerhalb des Suchfensters kann durch die Filter weiter eingegrenzt werden.
+Ein Projectmember befindet sich innerhalb von einem Project und möchte für eine bestimmte Group oder Rule References hinzufügen. 
+Dazu klickt er auf die entsprechende Group oder Rule, wodurch sich ein View mit den Eigenschaften öffnet.
+Es gibt ein Eingabefeld für eine ID um die Reference zu anderen Groups oder Rules zu definieren. 
+Dieses Eingabefeld bietet automatisch Vorschläge zur Vervollständigung an, die während der Eingabe angezeigt werden. 
+Alternativ kann über einen "Suchen" Button neben dem Eingabefeld auch nach Rules oder Groups gesucht werden. 
+Diese Suche beschränkt sich auf alle Rules und Groups innerhalb des Projects. 
+Die Ergebnisse können auf die gleiche Art gefiltert werden, wie bei der regulären Suche. 
+Mithilfe von Checkboxen können mehrere Rules oder Groups ausgewählt werden, um eine Reference zu diesen zu erstellen. 
+Sollte eine Group geöffnet sein, dann wird die Autovervollständigung und die Suche weitere Groups, Concepts oder Constraints anzeigen. 
+Sollte eine Rule geöffnet sein, dann werden nur Concepts und Querytemplates angezeigt. 
+Innerhalb des Suchfensters kann durch die Filter weiter eingegrenzt werden.
 
-Wenn References hinzugefügt werden, wird von dem Server im Hintergrund geprüft, ob es einen Zyklus gibt und in diesem Falle eine Fehlermeldung ausgegeben, ohne die Reference zu speichern. Andernfalls werden die References abgespeichert.
+Wenn References durch Anklicken eines Bestätigen-Button hinzugefügt werden, wird von dem Server im Hintergrund geprüft, ob es einen Zyklus gibt und in diesem Falle eine Fehlermeldung ausgegeben, ohne die Reference zu speichern. 
+Andernfalls werden die References abgespeichert.
+
+Das Projectmember kann jederzeit über einen Abbrechen-Button das Hinzufügen von Referenzen abbrechen und so zum Project-View zurückgelangen.
