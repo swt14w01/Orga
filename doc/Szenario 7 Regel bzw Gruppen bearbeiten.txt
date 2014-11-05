@@ -1,13 +1,27 @@
 Rules/Groups bearbeiten
 
-Möchte ein Projektmitglied eine Rule/Group bearbeiten, muss er auf der Webseite korrekt eingeloggt sein 
-und in seinem Project die Rule/Group anwählen. Der registrierte User kann den Bearbeiten-Button anklicken 
-und gelangt somit in den Bearbeitungsmodus. 
-Regelbearbeitung:  Man kann ID, Severity, Description und Cypher direkt im Textfeld bearbeiten. 
-Geht man ins Textfeld von ID und Cypher, erscheint ein Popup, welches auf die Verweise und möglichen  
-Beeinträchtigung anderer Groups hinweist. Bei Bestätigung kann man den Text editieren, ansonsten wird der 
-Fokus auf den Bearbeiten-Button gelegt. Der registrierte User kann den Bearbeitungsvorgang abbrechen, indem er 
-auf den Abbrechen-Button klickt.  Danach gelangt er wieder zur Übersicht der Rules.
-Gruppenbearbeitung:  Man kann die ID verändern oder Rules und (von der Aktuellen verschiedene-) internal Group 
-aus der Group entfernen. Der registrierte User kann den Bearbeitungsvorgang abbrechen, indem er auf den Abbrechen-Button klickt. 
-Danach gelangt er wieder zur Übersicht der Groups.
+Möchte ein Projectmember eine Rule oder Group bearbeiten, muss er auf der Webseite korrekt eingeloggt sein und in seinem Project die Rule/Group anwählen. 
+Der registrierte User kann den Bearbeiten-Button anklicken und gelangt somit in den Bearbeiten-View.
+
+1.) Regelbearbeitung:  
+  Das Projectmember kann ID, Severity, Description und Cypher direkt in einem Textfeld bearbeiten. 
+  Klickt man in das Textfeld von ID und Cypher, erscheint ein neuer View, welcher auf die Verweise und möglichen  
+  Beeinträchtigung anderer Groups hinweist. 
+  Nach dem Anklicken des Bestätigen-Button im neuen View, wird dieser geschlossen und das Projectmember kann den Text editieren.
+  Ansonsten wird der Fokus auf den Bearbeiten-Button gelegt. 
+  Wird im Bearbeiten-View der Bestätigen-Button angeklickt überprüft das JRMDS die Eingaben auf ihre Gültigkeit.
+  Ist die ID bereits in der Rule-Datenbank vergeben, so wird eine Nachricht ausgegeben "Die ID ist bereits vergeben".
+
+
+2.) Gruppenbearbeitung:  Das Projectmember kann ID, Tags und Referenz in einem Textfeld bearbeiten.
+  Klickt man in das Textfeld von ID und Cypher, erscheint ein neuer View, welcher auf die Verweise und möglichen  
+  Beeinträchtigung anderer Groups hinweist. 
+  Nach dem Anklicken des Bestätigen-Button im neuen View, wird dieser geschlossen und das Projectmember kann den Text editieren.
+  Ansonsten wird der Fokus auf den Bearbeiten-Button gelegt. 
+  Wird im Bearbeiten-View der Bestätigen-Button angeklickt überprüft das JRMDS die Eingaben auf ihre Gültigkeit.
+   Ist die ID bereits in der Rule-Datenbank vergeben, so wird eine Nachricht ausgegeben "Die ID ist bereits vergeben".
+
+Wenn die Eingaben valide sind, wird der entsprechende Rule Eintrag in der Rule-Datenbank mit den neuen Eingaben des Users versehen.
+
+Der registrierte User kann den Bearbeitungsvorgang abbrechen, indem er auf den Abbrechen-Button klickt.  
+Danach dem erfolgreichen Bestätigen oder Abbrechen gelangt er wieder zur Übersicht der Rules.
