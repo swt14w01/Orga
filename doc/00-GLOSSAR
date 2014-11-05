@@ -9,3 +9,4 @@ internal rule/group- innerhalb eines Projects definiert
 external rule/group - durch URI spezifizierte externe Repositorys
 View - eine Seite, bzw Fenster innerhalb der Webanwendung
 Profil - Seite, in der Benutzername, Emailadresse und Projezugehörigkeiten des registrierten Users zu finden sind
+Admin - User mit Vollberechtigung
