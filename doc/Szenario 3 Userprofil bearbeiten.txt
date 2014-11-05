@@ -5,7 +5,7 @@ Einzusehen ist das Profil, mitsamt den Projektzugehörigkeiten, von jedem andere
 Dazu muss man auf den Usernamen des Users klicken. Dort finden dann die User mit entsprechenden Berechtigungen 
 den Bearbeiten- Button.
 Der Admin kann Username, Passwort und Emailadresse anderer User unter den selben Bedingungen ändern.
-Wird der Bearbeiten-Button angeklickt, öffnet sich eine Seite, in der User ihr Passwort und ihre Emailadresse ändern können.
+Wird der Bearbeiten-Button angeklickt, öffnet sich ein Bearbeiten-View, in der User ihr Passwort und ihre Emailadresse ändern können.
 1.) Möchten User ihr Passwort ändern, müssen sie ein neues doppelt eingeben.
     Mit einem Klick auf den Bestätigen-Button kontrolliert die JRMDS, ob die eingegebenen Passwörte übereinstimmen und bestimmte Vorraussetzungen erfüllen..
     Entspricht das erste Passwort nicht den Vorraussetzungen, wird die Nachricht "Das Passwort genügt nicht den Vorraussetzungen." ausgegeben.
