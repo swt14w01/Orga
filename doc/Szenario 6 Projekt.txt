@@ -1,6 +1,6 @@
 Projekt
 
-anlegen
+1.) anlegen
 
 Ein registrierter User kann über die Schaltfläche "Erstelle neues Project" ein neues Project anlegen.
 Ein View zum Erstellen eines neues Projects erscheint.
@@ -9,24 +9,34 @@ Nach dem Anklicken des Bestätigen-Button kontrolliert JRMDS, ob der Name bereit
 Sollte dieser schon existieren, erscheint die Meldung "Project-Name ist bereits vergeben". 
 Ist der Name frei, wird für das Project in der Project-Datenbank ein Eintrag angelegt.
 
-bearbeiten
+Über einen Abbrechen-Button kann das Anlegen eines neuen Projectes jederzeit abgebrochen werden.
+Die eingetragenen Daten werden beim Anklicken verworfen und der User gelangt zurück zur Hauptseite.
 
-Im Project View kann jedes User, mit dem Status Project Member, über den Button Edit Project das Projekt bearbeiten.
-Dabei können die Project ID, die Descrition und/oder die Tags geändert werden.
-Entsprechende Änderungen werden in der Datenbank gespeichert.
+2.) bearbeiten
 
-löschen
+Im Project View kann jeder User, der den Status Project-Member hat, über den Button "Project bearbeiten" das Projekt bearbeiten.
+Beim Anklicken des Buttons öffnet sich ein neuer View, in dem der Project-Name und die Beschreibung geändert werden können.
+Wird der Bestätigen-Button angeklickt, kontrolliert JRMDS, ob der neue Project-Name bereits in der Project-Datenbank vorhanden ist.
+Ist dies der Fall, erscheint die Meldung "Project-Name ist bereits vergeben".
+Wenn der Name noch frei ist, werden die Daten zu dem Project in der Project-Datenbank entsprechend abgeändert.
+Über einen Abbrechen-Button kann das Bearbeiten des Projects jederzeit abgebrochen werden.
+Die eingetragenen Daten werden beim Anklicken verworfen und der User gelangt zurück zum Project View.
 
-Im Project View kann mittels Delete Project-Button das gesamte Projekt gelöscht werden.
-Das Löschen eines Projekts muss in einem Popupfenster mit der Meldung "Are you sure?" bestätigt oder abgelehnt werden.
-Wird abgelehnt, wird der Vorgang abgebrochen. Bei Bestätigung werden alle gespeicherten Inhalte 
-aus der Datenbank entfernt.
+3.) löschen
 
-Mitglied hinzufügen
+Im Project View kann mit dem Button "Project löschen" das gesamte Projekt gelöscht werden.
+Das Löschen eines Projekts muss in einem neuen View mit der Meldung "Sind Sie sicher?" bestätigt oder abgelehnt werden.
+Wird abgelehnt, wird der Vorgang abgebrochen. Bei Bestätigung werden alle gespeicherten Inhalte zu dem Project
+aus der Project-Datenbank entfernt.
 
-Mit dem Add Member Button im Project View kann ein neues Projektmitglied hinzugefügt werden.
-Dazu muss in einem gesonderten Add Member View der Username eingegeben werden.
-Ist dieser nicht in der Datenbank vorhanden, wird "User dosn't exist" ausgegeben.
-Wenn der Username vorhanden ist, wird der Status des Users für dieses Projekt auf Projectmember gesetzt
-und die entsprechende Verlinkung in der Datenbank gesetzt.
-Sollte der User schon Projectmember für dieses Prjekt sein, wird "User already Projectmember" ausgegeben.
+4.) Mitglied hinzufügen
+
+Mit dem Button "Projectmember hinzufügen" im Project View kann ein neues Projectmember hinzugefügt werden.
+Dazu muss in einem gesonderten "Projectmember hinzufügen" View der Username eingegeben werden.
+Nach dem Bestätigen über einen Bestätigen-Button kontrolliert JRMDS ob dieser in der User-Datenbank vorhanden ist.
+Ist dieser dort nicht vorhanden, wird "User exisitert nicht" ausgegeben.
+Wenn der Username vorhanden ist, wird der Status des Users für dieses Project auf Projectmember gesetzt
+und die entsprechende Verlinkung in der Project-Datenbank gesetzt.
+Sollte der User schon Projectmember für dieses Project sein, wird "User ist bereits ein Projectmember" ausgegeben.
+Über einen Abbrechen-Button kann der Vorgang des Hinzufügens eines neuen Projectmembers jederzeit abgebrochen werden.
+Nach Anklicken dieses Buttons gelangt der User zurück zum Project View.
