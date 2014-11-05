@@ -6,13 +6,21 @@ Szenario 5)
 
 Der User möchte eine Group erstellen. Dazu befindet er sich auf der Seite des Projektes und klickt auf den Button "Group erstellen".
 Dies öffnet die Ansicht zum Erstellen einer neuen Group. 
-Hier wird der User aufgefordert, spezifische Angaben bzgl. der neuen Group zu machen.  (ID, Tags....)
+Hier wird der User aufgefordert, spezifische Angaben bzgl. der neuen Group zu machen.  (ID, Tags, Referenz (siehe Szenario Referenzen definieren))
 Das JRMDS überprüft die Eingaben auf ihre Gültigkeit nach dem Anklicken des Bestätigen-Button. 
 Ist die ID bereits in der Rule-Datenbank vergeben, so wird eine Nachricht ausgegeben "Die ID ist bereits vergeben".
-((Stimmen die Tags mit den in der Datenbank bereits hinterlegten Tags nicht überein, wird die Nachricht "Die Tags sind ungültig." ausgegeben.))
+
 Wenn die Eingaben valide sind, wird ein neuer Eintrag in der Rule-Datenbank mit den Eingaben des Users getätigt.
 Der Vorgang kann jederzeit über einen Abbrechen-Button abgebrochen werden.
 
 5.2)
 Regel hinzufügen
-??? Referenzen, Untergruppen, Obergruppen
+
+Der User möchte eine Rule erstellen. Dazu befindet er sich auf der Seite des Projektes und klickt auf den Button "Rule erstellen".
+Dies öffnet die Ansicht zum Erstellen einer neuen Rule. 
+Hier wird der User aufgefordert, spezifische Angaben bzgl. der neuen Rule zu machen.  (ID, Cypher, Severity, Referenz (siehe Szenario Referenzen definieren))
+Das JRMDS überprüft die Eingaben auf ihre Gültigkeit nach dem Anklicken des Bestätigen-Button. 
+Ist die ID bereits in der Rule-Datenbank vergeben, so wird eine Nachricht ausgegeben "Die ID ist bereits vergeben".
+
+Wenn die Eingaben valide sind, wird ein neuer Eintrag in der Project-Datenbank mit den Eingaben des Users getätigt.
+Der Vorgang kann jederzeit über einen Abbrechen-Button abgebrochen werden.
