@@ -11,3 +11,4 @@ external rule/group - durch URI spezifizierte externe Repositorys
 View - eine Seite, bzw Fenster innerhalb der Webanwendung
 Profil - Seite, in der Benutzername, Emailadresse und Zugehörigkeiten im Project des registrierten Users zu finden sind
 Admin - User mit Vollberechtigung
+Username - Der selbstvergebene eindeutige Name, der bei der Registrierung vergeben wurde.
