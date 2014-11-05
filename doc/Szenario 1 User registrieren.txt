@@ -6,8 +6,8 @@ Das JRMDS prüft nach, ob der Username bereits vorhanden ist.
 Das JRMDS macht den Nutzer auf den vergebenen Usernamen aufmerksam. Er muss einen alternativen Namen eingeben. Das JRMDS
 2.) Username ist nicht vergeben
 Der User gibt ein Passwort ein. Das JRMDS prüft, ob das Passwort bestimmten Kriterien genügt.
-Der User muss eine E-Mail-Adresse eingeben (2-Mal). Das System prüft, ob die beiden Eingaben übereinstimmen und ob die Adresse nicht bereits in Verwendung ist.
-Wenn alles in Ordnung ist, so wird in der Datenbank ein Eintrag für den User erstellt mit einem zufällig generierten Aktivierungscode und eine Bestätigungsmail vom System versandt.
+Der User muss eine E-Mail-Adresse eingeben (2-Mal). Das JRMDS prüft, ob die beiden Eingaben übereinstimmen und ob die Adresse nicht bereits in Verwendung ist.
+Wenn alles in Ordnung ist, so wird in der Datenbank ein Eintrag für den User erstellt mit einem zufällig generierten Aktivierungscode und eine Bestätigungsmail vom JRMDS versandt.
 Der User muss den Aktivierungslink anklicken. Das JRMDS prüft den Aktivierungscode auf Gültigkeit und schaltet den User bei Übereinstimmung frei. Er wird dann auf die Übersichtsseite weitergeleitet.
 
 Szenario 2: 	logge User ein
