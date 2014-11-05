@@ -1,7 +1,7 @@
 Szenario 4 
 Suche nach Rules und deren Filterung
 
-Der User befindet sich auf der Platform und möchte nach einer Rule oder einer Group suchen.
+Der User befindet sich auf der Seite und möchte nach einer Rule oder einer Group suchen.
 Dazu gibt er einen Suchbegriff  in das Suchfeld ein.
 Das JRMDS reagiert auf die Tasteneingabe und gleicht diese mit der Datenbank ab.
 Dem User werden sofort sinnvolle automatische Komplettierungsvorschläge geliefert.
