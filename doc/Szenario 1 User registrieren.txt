@@ -1,16 +1,14 @@
 Szenario 1: registriere Benutzer
 
-Der User möchte sich registrieren. Dazu gibt er seinen gewünschten Benutzernamen an.
-Das System schaut nach, ob der Benutzername bereits vorhanden ist.
-1) Benutzername ist vergeben
-Das System macht den Nutzer auf den vergebenen Namen aufmerksam. Er muss einen alternativen Namen auswählen.
-2.)Benutzername ist nicht vergeben
-Es wird ein neuer User-Eintrag in der Datenbank getätigt.
-Der User gibt ein Passwort ein. Das System prüft, ob das Passwort bestimmten Kriterien genügt. 
-Ist dies der Fall, so wird User-Eintrag aktualisiert.
-Der User muss eine E-Mail-Adresse eingeben (2-Mal). Das System prüft, ob die beiden Eingaben übereinstimmen.
-Ist dies der Fall, so wird eine Bestätigungsmail vom System versandt.
-Der User muss den Aktivierungslink anklicken und wird dann auf die Übersichtsseite weitergeleitet.
+Der User möchte sich registrieren. Dazu gibt er seinen gewünschten Usernamen an.
+Das JRMDS prüft nach, ob der Username bereits vorhanden ist.
+1) Username ist vergeben
+Das JRMDS macht den Nutzer auf den vergebenen Usernamen aufmerksam. Er muss einen alternativen Namen eingeben. Das JRMDS
+2.) Username ist nicht vergeben
+Der User gibt ein Passwort ein. Das JRMDS prüft, ob das Passwort bestimmten Kriterien genügt.
+Der User muss eine E-Mail-Adresse eingeben (2-Mal). Das System prüft, ob die beiden Eingaben übereinstimmen und ob die Adresse nicht bereits in Verwendung ist.
+Wenn alles in Ordnung ist, so wird in der Datenbank ein Eintrag für den User erstellt mit einem zufällig generierten Aktivierungscode und eine Bestätigungsmail vom System versandt.
+Der User muss den Aktivierungslink anklicken. Das JRMDS prüft den Aktivierungscode auf Gültigkeit und schaltet den User bei Übereinstimmung frei. Er wird dann auf die Übersichtsseite weitergeleitet.
 
 Szenario 2: 	logge User ein
 Szenario 3: 	User Profil bearbeiten
