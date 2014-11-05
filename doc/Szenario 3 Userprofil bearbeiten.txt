@@ -20,7 +20,9 @@ Nun wird von JRMDS geprüft, ob der User, der die den Profil-View ansehen möcht
         Wird der Bearbeiten-Button angeklickt, öffnet sich ein Bearbeiten-View, in der User ihr Passwort und ihre Emailadresse ändern können.
         Der Admin kann Username, Passwort und Emailadresse anderer User unter den selben Bedingungen ändern.
         
-        2.2.1) Möchten User ihren Usernamen ändern, wird nach dem Betätigen des Bestätigen-Button von JRMDS geprüft, ob der eingegebene Username bereits an einen anderen Usereintrag vergeben ist.
+        2.2.1) Möchten User ihren Usernamen ändern, wird nach dem Betätigen des Bestätigen-Button von JRMDS geprüft, ob der eingegebene Username dem bereits vorhandenem entspricht.
+               Sind die Usernamen identisch, wird der User auf sein Profil-View weitergeleitet.
+               Ansonsten prüft das JRMDS, ob der eingegebene Username bereits an einen anderen Usereintrag vergeben ist.
                 Ist dieser bereits vergeben, wird die Nachricht "Der Username ist bereits vergeben" angezeigt.
                 Ist der Name noch frei, trägt JRMDS den neuen Usernamen in der User-Datenbank für den registrierten User ein.
         
@@ -30,7 +32,9 @@ Nun wird von JRMDS geprüft, ob der User, der die den Profil-View ansehen möcht
             Stimmen die beiden Passwörter nicht überein, wird die Nachricht "Die Passwörter stimmen nicht überein." ausgegeben.
         
         2.2.3) Möchte ein User seine e-Mailadresse ändern, muss er die alte e-Mailadresse mit der neuen ersetzen.
-           Mit einem Klick auf den Bestätigen-Button überprüft JRMDS, ob die e-Mailadresse bereits in der User-Datenbank bei einem anderen Usereintrag hinterlegt ist.
+           Mit einem Klick auf den Bestätigen-Button überprüft JRMDS, ob die eingegebene e-Mailadresse der bereits vorhandenen entspricht.
+            Sind die e-Mailadressen identisch, wird der User auf sein Profil-View weitergeleitet.
+           Ansonsten prüft das JRMDS, ob die eingegebene e-Mailadresse bereits in der User-Datenbank bei einem anderen Usereintrag hinterlegt ist.
            Ist die e-Mailadresse bereits hinterlegt, wird eine Nachricht ausgegeben "Die e-Mailadresse ist bereits einem anderen User zugeordnet".
 
         Gibt es nach dem Klick des Bestätigen-Button keine Benachrichtigungn, übernimmt JRMDS die Änderungen des Profiles in die Userdatenbank.
