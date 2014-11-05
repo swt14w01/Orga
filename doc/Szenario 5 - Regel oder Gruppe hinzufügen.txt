@@ -3,22 +3,15 @@ Szenario 5)
 Über die Seite navigiert der User zu seinem Projekt. Dort findet er die Buttons "Group erstellen" und "Rule erstellen".
 
 5.1)Group erstellen
+  Der User möchte eine Group erstellen. Dazu befindet er sich auf der Seite des Projektes und klickt auf den Button "Group erstellen".
+  Dies öffnet den View zum Erstellen einer neuen Group. 
+  Hier wird der User aufgefordert, spezifische Angaben bzgl. der neuen Group zu machen.  (ID, Tags, Referenz (siehe Szenario Referenzen definieren))
 
-Der User möchte eine Group erstellen. Dazu befindet er sich auf der Seite des Projektes und klickt auf den Button "Group erstellen".
-Dies öffnet die Ansicht zum Erstellen einer neuen Group. 
-Hier wird der User aufgefordert, spezifische Angaben bzgl. der neuen Group zu machen.  (ID, Tags, Referenz (siehe Szenario Referenzen definieren))
-Das JRMDS überprüft die Eingaben auf ihre Gültigkeit nach dem Anklicken des Bestätigen-Button. 
-Ist die ID bereits in der Rule-Datenbank vergeben, so wird eine Nachricht ausgegeben "Die ID ist bereits vergeben".
-
-Wenn die Eingaben valide sind, wird ein neuer Eintrag in der Rule-Datenbank mit den Eingaben des Users getätigt.
-Der Vorgang kann jederzeit über einen Abbrechen-Button abgebrochen werden.
-
-5.2)
-Regel hinzufügen
-
-Der User möchte eine Rule erstellen. Dazu befindet er sich auf der Seite des Projektes und klickt auf den Button "Rule erstellen".
-Dies öffnet die Ansicht zum Erstellen einer neuen Rule. 
-Hier wird der User aufgefordert, spezifische Angaben bzgl. der neuen Rule zu machen.  (ID, Cypher, Severity, Referenz (siehe Szenario Referenzen definieren))
+5.2) Regel hinzufügen
+  Der User möchte eine Rule erstellen. Dazu befindet er sich auf der Seite des Projektes und klickt auf den Button "Rule erstellen".
+  Dies öffnet den View zum Erstellen einer neuen Rule. 
+  Hier wird der User aufgefordert, spezifische Angaben bzgl. der neuen Rule zu machen.  (ID, Cypher, Severity, Referenz (siehe Szenario Referenzen definieren))
+  
 Das JRMDS überprüft die Eingaben auf ihre Gültigkeit nach dem Anklicken des Bestätigen-Button. 
 Ist die ID bereits in der Rule-Datenbank vergeben, so wird eine Nachricht ausgegeben "Die ID ist bereits vergeben".
 
