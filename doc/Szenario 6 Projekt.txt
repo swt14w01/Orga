@@ -1,0 +1,32 @@
+Projekt
+
+anlegen
+
+Ein registred User kann über die Schaltfläche "Create new Project" ein neues Projekt anlegen.
+Der Project creation View erscheint.
+Dazu wird eine Project-ID benötigt, welche über die Datenbank abgeglichen wird.
+Sollte diese schon existieren erscheint die Meldung "Project already exist". Wenn die ID noch 
+nicht vergeben ist, kann optional noch eine Description und ein oder mehrere Tags für das Projekt vergeben werden.
+Über den Button "Create" werden alle Informationen in der Datenbank gespeichert.
+
+bearbeiten
+
+Im Project View kann jedes User, mit dem Status Project Member, über den Button Edit Project das Projekt bearbeiten.
+Dabei können die Project ID, die Descrition und/oder die Tags geändert werden.
+Entsprechende Änderungen werden in der Datenbank gespeichert.
+
+löschen
+
+Im Project View kann mittels Delete Project-Button das gesamte Projekt gelöscht werden.
+Das Löschen eines Projekts muss in einem Popupfenster mit der Meldung "Are you sure?" bestätigt oder abgelehnt werden.
+Wird abgelehnt, wird der Vorgang abgebrochen. Bei Bestätigung werden alle gespeicherten Inhalte 
+aus der Datenbank entfernt.
+
+Mitglied hinzufügen
+
+Mit dem Add Member Button im Project View kann ein neues Projektmitglied hinzugefügt werden.
+Dazu muss in einem gesonderten Add Member View der Username eingegeben werden.
+Ist dieser nicht in der Datenbank vorhanden, wird "User dosn't exist" ausgegeben.
+Wenn der Username vorhanden ist, wird der Status des Users für dieses Projekt auf Projectmember gesetzt
+und die entsprechende Verlinkung in der Datenbank gesetzt.
+Sollte der User schon Projectmember für dieses Prjekt sein, wird "User already Projectmember" ausgegeben.
