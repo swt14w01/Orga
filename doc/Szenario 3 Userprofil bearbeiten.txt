@@ -2,21 +2,36 @@ Userprofil bearbeiten
 
 Jeder registrierte User hat ein Profil, welches vom Admin und dem zugehörigen User bearbeitet werden kann. 
 Einzusehen ist das Profil, mitsamt den Projektzugehörigkeiten, von jedem anderen User. 
-Dazu muss man auf den Usernamen des Users klicken. Dort finden dann die User mit entsprechenden Berechtigungen 
-den Bearbeiten- Button.
-Der Admin kann Username, Passwort und Emailadresse anderer User unter den selben Bedingungen ändern.
-Wird der Bearbeiten-Button angeklickt, öffnet sich ein Bearbeiten-View, in der User ihr Passwort und ihre Emailadresse ändern können.
-1.) Möchten User ihr Passwort ändern, müssen sie ein neues doppelt eingeben.
-    Mit einem Klick auf den Bestätigen-Button kontrolliert die JRMDS, ob die eingegebenen Passwörte übereinstimmen und bestimmte Vorraussetzungen erfüllen..
-    Entspricht das erste Passwort nicht den Vorraussetzungen, wird die Nachricht "Das Passwort genügt nicht den Vorraussetzungen." ausgegeben.
-    Stimmen die beiden Passwörter nicht überein, wird die Nachricht "Die Passwörter stimmen nicht überein." ausgegeben.
-2.) Möchte ein User seine e-Mailadresse ändern, muss er die alte e-Mailadresse mit der neuen ersetzen.
-   Mit einem Klick auf den Bestätigen-Button überprüft JRMDS, ob die e-Mailadresse bereits in der User-Datenbank hinterlegt ist.
-   Ist die e-Mailadresse bereits hinterlegt, wird eine Nachricht ausgegeben "Die e-Mailadresse ist bereits einem anderen User zugeordnet".
+Dazu muss man auf den Usernamen des Users klicken. 
+Klickt ein User auf einen Username, wird von JRMDS unterschieden:
 
-Gibt es nach dem Klick des Bestätigen-Button keine Benachrichtigungn, übernimmt JRMDS die Änderungen des Profiles in die Userdatenbank.
-Der User wird zu seiner Profilseite weitergeleitet.
-Ein Abbrechen-Button ermöglicht jederzeit während der Bearbeitung des Profiles eine Rückkehr zur Profilseite ohne Änderungen zu übernehmen.
+1.) nicht registrierter User: 
+    Bei einem nicht registrierten User fragt JRMDS von der Datenbank die Daten des angeklickten Users von der User-Datenbank ab.
+    Mit den Daten wird eine Profilseite erstellt, die lediglich vom User angesehen werden kann.
+    
+2.) registrierter User:
+    Bei einem registrierten User fragt JRDMS von der Datenbank den Usernamen des angeklickten Users ab und vergleicht ihn mit dem des Users, der die Profilseite einsehen möchte.
+    2.1) Sind die Usernamen unterschiedlich, ist der registrierte User nicht berechtigt die Profilseite zu bearbeiten.
+        JRMDS erstellt mit den Daten des angeklickten Users die Profilseite.
+        Diese kann nur von dem registrierten User angesehen werden.
+        
+    2.2) Sind die Usernamen identisch, fragt JRMDS die Daten des registrierten Users von der User-Datenbank ab und erstellt eine Profilseite.
+        Der User findet darauf einen Bearbeiten- Button.
+        Der Admin kann Username, Passwort und Emailadresse anderer User unter den selben Bedingungen ändern.
+        Wird der Bearbeiten-Button angeklickt, öffnet sich ein Bearbeiten-View, in der User ihr Passwort und ihre Emailadresse ändern können.
+        
+        2.2.1) Möchten User ihr Passwort ändern, müssen sie ein neues doppelt eingeben.
+            Mit einem Klick auf den Bestätigen-Button kontrolliert die JRMDS, ob die eingegebenen Passwörte übereinstimmen und bestimmte Vorraussetzungen erfüllen..
+            Entspricht das erste Passwort nicht den Vorraussetzungen, wird die Nachricht "Das Passwort genügt nicht den Vorraussetzungen." ausgegeben.
+            Stimmen die beiden Passwörter nicht überein, wird die Nachricht "Die Passwörter stimmen nicht überein." ausgegeben.
+        
+        2.2.2) Möchte ein User seine e-Mailadresse ändern, muss er die alte e-Mailadresse mit der neuen ersetzen.
+           Mit einem Klick auf den Bestätigen-Button überprüft JRMDS, ob die e-Mailadresse bereits in der User-Datenbank hinterlegt ist.
+           Ist die e-Mailadresse bereits hinterlegt, wird eine Nachricht ausgegeben "Die e-Mailadresse ist bereits einem anderen User zugeordnet".
+
+        Gibt es nach dem Klick des Bestätigen-Button keine Benachrichtigungn, übernimmt JRMDS die Änderungen des Profiles in die Userdatenbank.
+        Der User wird zu seiner Profilseite weitergeleitet.
+        Ein Abbrechen-Button ermöglicht jederzeit während der Bearbeitung des Profiles eine Rückkehr zur Profilseite ohne Änderungen zu übernehmen.
 
 
 
