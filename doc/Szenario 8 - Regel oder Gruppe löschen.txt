@@ -2,7 +2,11 @@ Szenario 8: Regel oder Gruppe löschen
 
 Möchte ein Projectmember eine Rule oder eine Group aus seinem Project löschen, muss er im view seines Project sein.
 Das Projectmember kann die Rule oder die Group seines Project anwählen und über einen Löschen-Button herauslöschen. 
-Eine neuer View öffnet sich, so bald das Projectmember auf den Button klickt, und zeigt alle Groups und Rules an, die der zu löschenden Group oder Rule untergeordnet und übergeordnet sind und somit durch das Löschen beeinflußt werden würden("orphaned" - verwaisen).
+Eine neuer View öffnet sich, so bald das Projectmember auf den Button klickt:
+
+1.) Rule: Der View zeigt alle Groups an, die diese Rule beinhalten.
+2.) Group: Der View zeigt alle Groups an, die der zu löschenden untergeordnet und übergeordnet sind und so durch das Löschen potentiell verwaisen würden.
+
 Bestätigt das Projectmember in diesem View das Löschen über einen Bestätigen-Button, wird die ausgewählte Group bzw. Rule gelöscht.
 Bricht das Projectmember den Löschvorgang ab mit dem Abbrechen-Button ab, schließt sich der neue View.
 Betätigt das Projectmember im Löschen-View den Abbrechen-Button, kehrt es zurück zum Project-View.
