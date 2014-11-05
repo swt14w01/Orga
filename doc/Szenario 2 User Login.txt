@@ -1,9 +1,9 @@
 User Login
 
-Der User gibt auf der Startseite seinen Username und sein Password ein.
-Nach einem Klick auf den Submit-Button wird der Name in der User Database gesucht.
-Ist dieser nicht vorhanden, wird die Meldung "User dosn't exist" ausgegeben.
-Wenn der Username existiert, wird das Password mit dem in der Datenbank hinterlegten abgeglichen.
-Stimmen diese nicht überein wird die Meldung " Password incorrect, please try again." ausgegeben.
-Ist der Abgleich korrekt bekommt der User den Status registred User
-und damit Zugriff auf sein Profil und die damit verknüpften Inhalte.
+Der User gibt auf der Startseite im Loginbereich seinen Usernamen und sein Passwort ein.
+Nach einem Klick auf den BestÃ¤tigen-Button wird der Username in der User Datenbank gesucht.
+Ist dieser nicht vorhanden, wird die Meldung "Der User exisitert nicht" ausgegeben.
+Wenn der Username existiert, wird das vom User eingegebene Passwort mit dem in der Datenbank hinterlegten abgeglichen.
+Stimmen diese nicht Ã¼berein wird die Meldung "Passwort nicht korrent, bitte erneut versuchen." ausgegeben.
+Ist der Abgleich korrekt bekommt der User den Status registrierter User
+und damit Zugriff auf sein Profil und die damit verknÃ¼pften Inhalte.
