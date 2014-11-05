@@ -2,31 +2,31 @@ Projekt
 
 anlegen
 
-Ein registred User kann über die Schaltfläche "Create new Project" ein neues Projekt anlegen.
-Der Project creation View erscheint.
-Dazu wird eine Project-ID benötigt, welche über die Datenbank abgeglichen wird.
-Sollte diese schon existieren erscheint die Meldung "Project already exist". Wenn die ID noch 
-nicht vergeben ist, kann optional noch eine Description und ein oder mehrere Tags für das Projekt vergeben werden.
-Über den Button "Create" werden alle Informationen in der Datenbank gespeichert.
+Ein registrierter User kann Ã¼ber die SchaltflÃ¤che "Erstelle neues Project" ein neues Project anlegen.
+Ein View zum Erstellen eines neues Projects erscheint.
+Hier kann der User einen Project-Namen und optional eine Project-Beschreibung angeben.
+Nach dem Anklicken des BestÃ¤tigen-Button kontrolliert JRMDS, ob der Name bereits fÃ¼r ein Project in der Project-Datenbank vergeben ist.
+Sollte dieser schon existieren, erscheint die Meldung "Project-Name ist bereits vergeben". 
+Ist der Name frei, wird fÃ¼r das Project in der Project-Datenbank ein Eintrag angelegt.
 
 bearbeiten
 
-Im Project View kann jedes User, mit dem Status Project Member, über den Button Edit Project das Projekt bearbeiten.
-Dabei können die Project ID, die Descrition und/oder die Tags geändert werden.
-Entsprechende Änderungen werden in der Datenbank gespeichert.
+Im Project View kann jedes User, mit dem Status Project Member, Ã¼ber den Button Edit Project das Projekt bearbeiten.
+Dabei kÃ¶nnen die Project ID, die Descrition und/oder die Tags geÃ¤ndert werden.
+Entsprechende Ã„nderungen werden in der Datenbank gespeichert.
 
-löschen
+lÃ¶schen
 
-Im Project View kann mittels Delete Project-Button das gesamte Projekt gelöscht werden.
-Das Löschen eines Projekts muss in einem Popupfenster mit der Meldung "Are you sure?" bestätigt oder abgelehnt werden.
-Wird abgelehnt, wird der Vorgang abgebrochen. Bei Bestätigung werden alle gespeicherten Inhalte 
+Im Project View kann mittels Delete Project-Button das gesamte Projekt gelÃ¶scht werden.
+Das LÃ¶schen eines Projekts muss in einem Popupfenster mit der Meldung "Are you sure?" bestÃ¤tigt oder abgelehnt werden.
+Wird abgelehnt, wird der Vorgang abgebrochen. Bei BestÃ¤tigung werden alle gespeicherten Inhalte 
 aus der Datenbank entfernt.
 
-Mitglied hinzufügen
+Mitglied hinzufÃ¼gen
 
-Mit dem Add Member Button im Project View kann ein neues Projektmitglied hinzugefügt werden.
+Mit dem Add Member Button im Project View kann ein neues Projektmitglied hinzugefÃ¼gt werden.
 Dazu muss in einem gesonderten Add Member View der Username eingegeben werden.
 Ist dieser nicht in der Datenbank vorhanden, wird "User dosn't exist" ausgegeben.
-Wenn der Username vorhanden ist, wird der Status des Users für dieses Projekt auf Projectmember gesetzt
+Wenn der Username vorhanden ist, wird der Status des Users fÃ¼r dieses Projekt auf Projectmember gesetzt
 und die entsprechende Verlinkung in der Datenbank gesetzt.
-Sollte der User schon Projectmember für dieses Prjekt sein, wird "User already Projectmember" ausgegeben.
+Sollte der User schon Projectmember fÃ¼r dieses Prjekt sein, wird "User already Projectmember" ausgegeben.
