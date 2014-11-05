@@ -1,24 +1,24 @@
 Userprofil bearbeiten
 
 Jeder registrierte User hat ein Profil, welches vom Admin und dem zugehörigen User bearbeitet werden kann. 
-Einzusehen ist das Profil, mitsamt den Projektzugehörigkeiten, von jedem anderen User. 
+Einzusehen ist das Profil, mitsamt den Projectzugehörigkeiten, von jedem anderen User. 
 Dazu muss man auf den Usernamen des Users klicken. 
-Klickt ein User auf einen Username, wird von JRMDS unterschieden:
+Klickt ein User auf einen Username, fragt JRMDS die Daten des registrierten Users von der User-Datenbank ab und erstellt eine Profil-View mit diesen.
+Nun wird von JRMDS geprüft, ob der User, der die den Profil-View ansehen möchte, den Status registriert hat
 
 1.) nicht registrierter User: 
-    Bei einem nicht registrierten User fragt JRMDS von der Datenbank die Daten des angeklickten Users von der User-Datenbank ab.
-    Mit den Daten wird eine Profilseite erstellt, die lediglich vom User angesehen werden kann.
+    Die Daten auf der Profilseite können von diesem User lediglich angesehen werden.
     
 2.) registrierter User:
-    Bei einem registrierten User fragt JRDMS von der Datenbank den Usernamen des angeklickten Users ab und vergleicht ihn mit dem des Users, der die Profilseite einsehen möchte.
-    2.1) Sind die Usernamen unterschiedlich, ist der registrierte User nicht berechtigt die Profilseite zu bearbeiten.
-        JRMDS erstellt mit den Daten des angeklickten Users die Profilseite.
-        Diese kann nur von dem registrierten User angesehen werden.
+    Bei einem registrierten User vergleicht JRMDS den Usernamen des registrierten Users mit dem des Users, dessen Profil-View angefragt wurde.
+    2.1) Sind die Usernamen unterschiedlich, ist der registrierte User nicht berechtigt den Profil-View zu bearbeiten.
+        Der User kann den Profil-View ansehen, aber nicht bearbeiten
+        Die Daten auf der Profilseite können von diesem User lediglich angesehen werden.
         
-    2.2) Sind die Usernamen identisch, fragt JRMDS die Daten des registrierten Users von der User-Datenbank ab und erstellt eine Profilseite.
+    2.2) Sind die Usernamen identisch: 
         Der User findet darauf einen Bearbeiten- Button.
-        Der Admin kann Username, Passwort und Emailadresse anderer User unter den selben Bedingungen ändern.
         Wird der Bearbeiten-Button angeklickt, öffnet sich ein Bearbeiten-View, in der User ihr Passwort und ihre Emailadresse ändern können.
+        Der Admin kann Username, Passwort und Emailadresse anderer User unter den selben Bedingungen ändern.
         
         2.2.1) Möchten User ihr Passwort ändern, müssen sie ein neues doppelt eingeben.
             Mit einem Klick auf den Bestätigen-Button kontrolliert die JRMDS, ob die eingegebenen Passwörte übereinstimmen und bestimmte Vorraussetzungen erfüllen..
@@ -31,7 +31,7 @@ Klickt ein User auf einen Username, wird von JRMDS unterschieden:
 
         Gibt es nach dem Klick des Bestätigen-Button keine Benachrichtigungn, übernimmt JRMDS die Änderungen des Profiles in die Userdatenbank.
         Der User wird zu seiner Profilseite weitergeleitet.
-        Ein Abbrechen-Button ermöglicht jederzeit während der Bearbeitung des Profiles eine Rückkehr zur Profilseite ohne Änderungen zu übernehmen.
+        Ein Abbrechen-Button ermöglicht jederzeit während der Bearbeitung des Profiles eine Rückkehr zum Profil-View ohne Änderungen zu übernehmen.
 
 
 
