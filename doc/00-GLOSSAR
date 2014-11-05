@@ -5,8 +5,9 @@ Reference - eine Beziehung zwischen Groups und Rules
 Project - Vereinigung von Groups und Rules, es kann nur References innerhalb eines Projects geben
 Projectmember - Ein User, der Zugriff auf ein bestimmtes Project hat
 User - allgemeiner User ohne bestimmten Zugriff
+registerter User - User nach erfolgreicher Registrierung und Emailvalidierung
 internal rule/group- innerhalb eines Projects definiert
 external rule/group - durch URI spezifizierte externe Repositorys
 View - eine Seite, bzw Fenster innerhalb der Webanwendung
-Profil - Seite, in der Benutzername, Emailadresse und Projezugehörigkeiten des registrierten Users zu finden sind
+Profil - Seite, in der Benutzername, Emailadresse und Zugehörigkeiten im Project des registrierten Users zu finden sind
 Admin - User mit Vollberechtigung
