@@ -5,21 +5,17 @@ Der registrierte User kann den Bearbeiten-Button anklicken und gelangt somit in 
 
 1.) Regelbearbeitung:  
   Das Projectmember kann ID, Severity, Description und Cypher direkt in einem Textfeld bearbeiten. 
-  Klickt man in das Textfeld von ID und Cypher, erscheint ein neuer View, welcher auf die Verweise und möglichen  
+  Klickt man in das Textfeld von ID und Cypher, erscheint ein Warnungs-View, welcher auf die Verweise und möglichen  
   Beeinträchtigung anderer Groups hinweist. 
-  Nach dem Anklicken des Bestätigen-Button im neuen View, wird dieser geschlossen und das Projectmember kann den Text editieren.
-  Ansonsten wird der Fokus auf den Bearbeiten-Button gelegt. 
-  Wird im Bearbeiten-View der Bestätigen-Button angeklickt überprüft das JRMDS die Eingaben auf ihre Gültigkeit.
-  Ist die ID bereits in der Rule-Datenbank vergeben, so wird eine Nachricht ausgegeben "Die ID ist bereits vergeben".
-
 
 2.) Gruppenbearbeitung:  Das Projectmember kann ID, Tags und Referenz in einem Textfeld bearbeiten.
-  Klickt man in das Textfeld von ID und Cypher, erscheint ein neuer View, welcher auf die Verweise und möglichen  
+  Klickt man in das Textfeld von ID, erscheint ein Warnungs-View, welcher auf die Verweise und möglichen  
   Beeinträchtigung anderer Groups hinweist. 
-  Nach dem Anklicken des Bestätigen-Button im neuen View, wird dieser geschlossen und das Projectmember kann den Text editieren.
-  Ansonsten wird der Fokus auf den Bearbeiten-Button gelegt. 
-  Wird im Bearbeiten-View der Bestätigen-Button angeklickt überprüft das JRMDS die Eingaben auf ihre Gültigkeit.
-   Ist die ID bereits in der Rule-Datenbank vergeben, so wird eine Nachricht ausgegeben "Die ID ist bereits vergeben".
+
+Nach dem Anklicken des Bestätigen-Button im Warnungs-View, wird dieser geschlossen und das Projectmember kann den Text editieren.
+Der Fokus bleibt auf dem Bestätigen-Button, bis er geklickt wurde.
+Wird im Bearbeiten-View der Bestätigen-Button angeklickt überprüft das JRMDS die Eingaben auf ihre Gültigkeit.
+Ist die ID bereits in der Rule-Datenbank vergeben, so wird eine Nachricht ausgegeben "Die ID ist bereits vergeben".
 
 Wenn die Eingaben valide sind, wird der entsprechende Rule Eintrag in der Rule-Datenbank mit den neuen Eingaben des Users versehen.
 
