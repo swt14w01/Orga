@@ -1,5 +1,12 @@
-Szenario 9: Externer Server/Client ruft Gruppe aus einem Projekt ab 
-
-Will ein externer Server oder ein Client die Groups eines Project abrufen, sendet er per Anfrage entweder nichts, oder seine Anmeldedaten direkt bei der Anfrage mit.
-Wird nichts gesendet, wird ein Fehlercode ausgegeben.
-Sendet er die Anmeldedaten, bekommt der Client/externe Server die Groups in XML-Format konvertiert und als XML-Datei zurückgeliefert.
+﻿Szenario 10: 
+Externe Server / Client schickt eine Anfrage für eine bestimmte Group aus einem Project. Das JRMDS ruft Informationen zu dem Project ab 
+und prüft, ob der Client für den Zugriff authentifiziert ist. Wenn dies nicht der Fall ist, wird ein HTTP-Statuscode (401) zurückgegeben.
+Wenn der Client für den Zugriff auf dieses Project berechtigt ist, wird die betreffende Group gesucht. Existiert die Gruppe nicht, wird 
+ein HTTP-Status 404 zurückgegeben.
+Existiert die Group, beginnt das JRMDS mit der Generierung des XML-Codes.
+Dazu werden zuerst vom JRDMS alle externen Rules über die im Project definierten URIs heruntergeladen und vom XML-Converter in das interne
+Datenformat gewandelt. Das JRMDS sucht nun für die spezifizierte Group alle definierten References und speichert gefundene Goups oder Rules 
+in einer listenförmigen Datenstruktur. Enthalten die gefundenen Rules/Groups weitere References, werden diese ebenfalls aufgelöst.
+Werden für eine Reference Rules/Groups jeweils external wie auch internal gefunden, so überschreiben sich Rules/Groups mit gleicher ID zuerst 
+in der Reihenfolge der spezifizierten URIs und schließlich die internal Rules/Groups.
+Das JRMDS sendet diese Liste von Groups und Rules zum XML-Converter. Die resultierende XML-Datei bekommt der Client dann zum Download angeboten.
