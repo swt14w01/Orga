@@ -27,7 +27,8 @@ Nun wird von JRMDS geprüft, ob der User, der die den Profil-View ansehen möcht
                 Ist der Name noch frei, trägt JRMDS den neuen Usernamen in der User-Datenbank für den registrierten User ein.
         
         2.2.2) Möchten User ihr Passwort ändern, müssen sie ein neues doppelt eingeben.
-            Mit einem Klick auf den Bestätigen-Button kontrolliert die JRMDS, ob die eingegebenen Passwörte übereinstimmen und bestimmte Vorraussetzungen erfüllen..
+            Mit einem Klick auf den Bestätigen-Button kontrolliert die JRMDS, ob die eingegebenen Passwörte übereinstimmen und bestimmte Vorraussetzungen erfüllen.
+            Sind die Passwortfelder leer, wird kein neues Passwort gesetzt und die Felder werden ignoriert.
             Entspricht das erste Passwort nicht den Vorraussetzungen, wird die Nachricht "Das Passwort genügt nicht den Vorraussetzungen." ausgegeben.
             Stimmen die beiden Passwörter nicht überein, wird die Nachricht "Die Passwörter stimmen nicht überein." ausgegeben.
         
