@@ -7,7 +7,8 @@ Er muss sich zuerst auf der Webseite einloggen und ein Projectmember des entspre
 Fragt der Server erneut ab, doch ist er kein berechtigtes Projectmember, wird erneut ein Fehlercode angezeigt.
 Ansonsten bekommt er die Regeln in XML-Format konvertiert und als XML-Datei zurückgeliefert.
 
-Fragt ein Client die Groups eines Project ab, sendet er per Anfrage seinen Userstatus (Gast oder registrierter User).
-Das JRMDS  kontrolliert, ob der Client das Recht hat die Groups des Project auszulesen.
-Hat er es nicht, wird ein Fehlercode ausgegeben.
-Ansonsten bekommt der Client die Groupsn in XML-Format konvertiert und als XML-Datei zurückgeliefert.
+Fragt ein Client die Groups eines Project ab, sendet er per Anfrage entweder nichts, oder seine Anmeldedaten.
+Sendet der Client nichts, wird ein Fehlercode ausgegeben, da er nicht berechtigt ist die Groups eines Projects abzurufen.
+Sendet er die Anmeldedaten, kontrolliert JRMDS, ob der Client das Recht hat die Groups des Project auszulesen.
+Hat er es nicht, wird wieder ein Fehlercode ausgegeben.
+Ansonsten bekommt der Client die Groups in XML-Format konvertiert und als XML-Datei zurückgeliefert.
