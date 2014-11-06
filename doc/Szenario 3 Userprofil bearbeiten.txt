@@ -18,7 +18,8 @@ Nun wird von JRMDS geprüft, ob der User, der die den Profil-View ansehen möcht
         
     2.2) Sind die Usernamen identisch: 
     Der User findet darauf einen Bearbeiten- Button und einen "Passwort ändern"-Button.
-    Wird der Bearbeiten-Button angeklickt, öffnet sich ein Bearbeiten-View, in der User ihr Passwort und ihre Emailadresse ändern können.
+    Wird der Bearbeiten-Button angeklickt, öffnet sich ein Bearbeiten-View, in dem User ihren Namen und ihre Emailadresse ändern können.
+    Wird der "Passwort ändern"-Button angeklickt, öffnet sich ein "Passwort ändern"-View, in dem User ihr Passwort ändern können.
     Der Admin kann Username, Passwort und Emailadresse anderer User unter den selben Bedingungen ändern.
         
         2.2.1) Möchten User ihren Usernamen ändern, wird nach dem Betätigen des Bestätigen-Button von JRMDS geprüft, ob der eingegebene Username dem bereits vorhandenem entspricht.
