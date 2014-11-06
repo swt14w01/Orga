@@ -10,7 +10,8 @@ Das JRMDS prüft in der User-Datenbank, ob diese e-Mailadresse registriert ist.
 	Stimmen die Passwörter nicht überein, wird "Die Passwörter stimmen nicht überein" ausgegeben.
 	Genügen die Passwörter nicht den Voraussetzungen, wird "Die Passwörter genügen nicht den Voraussetzungen" ausgegeben.
 	Wurden das Passwort korrekt gewählt und richtig in beide Felder eingetragen, so sendet JRMDS dieses an die User-Datenbank als neues Passwort für den User.
-	Der User wird anschließend als registrierter User auf die Hauptseite weitergeleitet.
+	Dem User wird eine Nachricht ausgegeben: "Passwort erfolgreich neu gesetzt."
+	
 
 Der User kann jederzeit auf dem Passwort-Vergessen-View sowie auf dem Passwort-Neusetzen-View auf Abbrechen klicken und seine bisherigen Einträge verwerfen.
 Er wird dann direkt auf die Hautpseite zurückgebracht.
