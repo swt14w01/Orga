@@ -1,14 +1,5 @@
 Szenario 9: Externer Server/Client ruft Gruppe aus einem Projekt ab 
 
-Will ein externer Server die Groups eines Project abrufen, wird zuerst mit einer internen Abfrage geprüft, ob dieses Projekt für die Öffentlichkeit zugänglich ist oder ob nur die entsprechenden Projectmember dieses Project einsehen dürfen.
-Ist das Project offen zugänglich, so werden in der Datenbank die Groups des Project ausgelesen, in XML-Format konvertiert und dem externen Server oder Client zurückgegeben.
-Falls das Project jedoch nur auf seine Member beschränkt ist, wird dem Abrufer ein Fehlercode ausgegeben. 
-Er muss sich zuerst auf der Webseite einloggen und ein Projectmember des entsprechenden Project sein.
-Fragt der Server erneut ab, doch ist er kein berechtigtes Projectmember, wird erneut ein Fehlercode angezeigt.
-Ansonsten bekommt er die Regeln in XML-Format konvertiert und als XML-Datei zurückgeliefert.
-
-Fragt ein Client die Groups eines Project ab, sendet er per Anfrage entweder nichts, oder seine Anmeldedaten.
-Sendet der Client nichts, wird ein Fehlercode ausgegeben, da er nicht berechtigt ist die Groups eines Projects abzurufen.
-Sendet er die Anmeldedaten, kontrolliert JRMDS, ob der Client das Recht hat die Groups des Project auszulesen.
-Hat er es nicht, wird wieder ein Fehlercode ausgegeben.
-Ansonsten bekommt der Client die Groups in XML-Format konvertiert und als XML-Datei zurückgeliefert.
+Will ein externer Server oder ein Client die Groups eines Project abrufen, sendet er per Anfrage entweder nichts, oder seine Anmeldedaten direkt bei der Anfrage mit.
+Wird nichts gesendet, wird ein Fehlercode ausgegeben.
+Sendet er die Anmeldedaten, bekommt der Client/externe Server die Groups in XML-Format konvertiert und als XML-Datei zurückgeliefert.
