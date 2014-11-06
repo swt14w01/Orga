@@ -27,24 +27,27 @@ Nun wird von JRMDS geprüft, ob der User, der die den Profil-View ansehen möcht
         Ansonsten prüft das JRMDS, ob der eingegebene Username bereits an einen anderen Usereintrag vergeben ist.
         Ist dieser bereits vergeben, wird die Nachricht "Der Username ist bereits vergeben" angezeigt.
         Ist der Name noch frei, trägt JRMDS den neuen Usernamen in der User-Datenbank für den registrierten User ein.
+        Der User wird zu seiner aktualisierten Profilseite weitergeleitet.
         
-        2.2.2)Möchten User ihr Passwort ändern, müssen sie auf den "Passwort ändern"-Button klicken.
+        2.2.2) Möchte ein User seine e-Mailadresse ändern, muss er die alte e-Mailadresse mit der neuen ersetzen.
+        Mit einem Klick auf den Bestätigen-Button überprüft JRMDS, ob die eingegebene e-Mailadresse der bereits vorhandenen entspricht.
+        Sind die e-Mailadressen identisch, wird der User auf sein Profil-View weitergeleitet.
+        Ansonsten prüft das JRMDS, ob die eingegebene e-Mailadresse bereits in der User-Datenbank bei einem anderen Usereintrag hinterlegt ist.
+        Ist die e-Mailadresse bereits hinterlegt, wird eine Nachricht ausgegeben "Die e-Mailadresse ist bereits einem anderen User zugeordnet".
+        Ist die e-Mailadresse noch frei, trägt JRMDS die neue e-Mailadresse in der User-Datenbank für den registrierten User ein.
+        Der User wird zu seiner aktualisierten Profilseite weitergeleitet.
+
+        2.2.3)Möchten User ihr Passwort ändern, müssen sie auf den "Passwort ändern"-Button klicken.
         Ein neuer View öffnet sich. Dort befinden sich ein Textfeld zur Eingabe des alten Passworts und zwei, um ein neues doppelt einzugeben.
         Mit einem Klick auf den Bestätigen-Button kontrolliert die JRMDS, ob das alte Passwort mit dem in der User-Datenbank übereinstimmt, die eingegebenen Passwörter übereinstimmen, und bestimmte Voraussetzungen erfüllen.
         Entspricht das erste Passwort nicht den Vorraussetzungen, wird die Nachricht "Das Passwort genügt nicht den Vorraussetzungen." ausgegeben.
         Stimmen die beiden Passwörter nicht überein, wird die Nachricht "Die Passwörter stimmen nicht überein." ausgegeben.
         Gibt es nach dem Klick des Bestätigen-Button keine Benachrichtigungn, übernimmt JRMDS die Passwortänderungen in die Userdatenbank.
-        Der User wird zu seiner Profilseite weitergeleitet.
+        Der User bekommt positives Feedback "Passwort erfolgreich geändert."
         Ein Abbrechen-Button ermöglicht jederzeit während der Bearbeitung des Passworts eine Rückkehr zum Profil-View ohne Änderungen zu übernehmen.
 
-        2.2.3) Möchte ein User seine e-Mailadresse ändern, muss er die alte e-Mailadresse mit der neuen ersetzen.
-        Mit einem Klick auf den Bestätigen-Button überprüft JRMDS, ob die eingegebene e-Mailadresse der bereits vorhandenen entspricht.
-        Sind die e-Mailadressen identisch, wird der User auf sein Profil-View weitergeleitet.
-        Ansonsten prüft das JRMDS, ob die eingegebene e-Mailadresse bereits in der User-Datenbank bei einem anderen Usereintrag hinterlegt ist.
-        Ist die e-Mailadresse bereits hinterlegt, wird eine Nachricht ausgegeben "Die e-Mailadresse ist bereits einem anderen User zugeordnet".
-
-        Gibt es nach dem Klick des Bestätigen-Button keine Benachrichtigungn, übernimmt JRMDS die Änderungen des Profiles in die Userdatenbank.
-        Der User wird zu seiner Profilseite weitergeleitet.
+     
+        
         Ein Abbrechen-Button ermöglicht jederzeit während der Bearbeitung des Profiles eine Rückkehr zum Profil-View ohne Änderungen zu übernehmen.
 
 
