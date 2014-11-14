@@ -53,7 +53,7 @@
 				<div class="actual_content">
 				
 							
-					<form id="editTemplate" onSubmit="return redirect();">
+					<form id="editTemplate">
 					<input type="hidden" name="redirect" value="index.html" />
 					ID <br/><input type="text" value=""  name="id" /><br/>
 					Description <br/><input type="text" value="" name="description" /><br/>
@@ -67,17 +67,12 @@
 					 <div id="dynamisch"> 
 					  </div>
 					  </TD></TR>
-					</Table>
-					<input type="submit" name ="submit" value="Speichern"><input type="button" value="Abbrechen" onclick="redirect()"><input type="button" value="Löschen" onklick="alert(Möh)">
-				  	</form>
+					</Table></form>
+					<form action="./index.html"><input type="submit" name ="submit" value="Speichern"></form> <form action="./index.html"><input type="reset" value="Abbrechen"></form><form action="./confirmDelete.html"><input type="button" name="delete" value="Löschen"></form>
+					
+				  	
 				  	 <script>
-					  function redirect(){
-		
-					          window.location = 'index.html'; 
-					  }
-					  
-
-					  var feld = 1;
+				  var feld = 1;
 
 					  function plus() {
 					   if (feld <= 5) {
