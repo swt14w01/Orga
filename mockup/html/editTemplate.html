@@ -67,11 +67,12 @@
 					 <div id="dynamisch"> 
 					  </div>
 					  </TD></TR>
-					</Table></form>
-					<form action="./index.html"><input type="submit" name ="submit" value="Speichern"></form> <form action="./index.html"><input type="reset" value="Abbrechen"></form><form action="./confirmDelete.html"><input type="button" name="delete" value="Löschen"></form>
+					</Table>
+					 <input type="reset" value="Reset"><input type="button" name="delete" value="Löschen" onClick="return confirmDelete();"><input type="button" name="abort" value="Abbrechen" onClick="return redirectToIndex();"/></form><form action="./index.html"><input type="submit" name ="submit" value="Speichern"></form>
 					
 				  	
 				  	 <script>
+				
 				  var feld = 1;
 
 					  function plus() {
@@ -91,6 +92,16 @@
 					    	  "<Table border=0><tr><td>Typ <br/><input type='radio' name='optionalparameter " + zaehler +"' value='String'>String<br/><input type='radio' name='optionalparameter " + zaehler +"' value='Int'>Int</td><td>Name<br/><input type='text' value=''  name='name' /></td><td>Wert<br/><input type='text' value=''  name='wert' /></td></tr></table><br/>";
 						    }
 					   }
+					  }
+					  
+					  function confirmDelete(){
+					  		var result = confirm("Das zu löschende Objekt ist mit .. verknüpft. Trotzdem löschen?");if (result==true) {window.location ="./index.html"} 
+					  		 
+					  	 }
+					  
+					  function  redirectToIndex(){
+						window.location = "./index.html";  
+						
 					  }
 					  </script>
 				</div>
