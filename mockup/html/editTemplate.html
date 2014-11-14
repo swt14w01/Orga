@@ -20,13 +20,22 @@
 				<img id="header_logo" src="../img/logo.png" alt="logo"/>
 				
 				<form id="search">
-				 <input type="text" value="Suchen auf JRMDS"  onfocus="(this.value == 'Suchen auf JRMDS') && (this.value = '')" onblur="(this.value == '') && (this.value = 'Suchen auf JRMDS')" />
-				 </form>
+				 <input id="search_input" type="text" value="Suchen auf JRMDS"  onfocus="(this.value == 'Suchen auf JRMDS') && (this.value = ''); this.style.color='black';" onblur="(this.value == '') && (this.value = 'Suchen auf JRMDS'); this.style.color='#d6d6d6';" />
+				 <input type="submit" id="search_button" value="">
+				 <select name="searchoption">
+					  <option selected>alle</option>
+					  <option>Gruppe</option>
+					  <option>Constrain</option>
+					  <option>Concept</option>
+					  <option>Template</option>
+				</select>
+				</form>
 				 
 				 <div id="welcome_user">
-					<a href="#user">Projekte</a>
-					<a href="#user">User1201201</a>
-					<a href="#user">Logout</a>
+					<a href="#user"><img src="../img/projects.png" alt="Projekte" class="symbol_small"/>Projekte</a>
+					<a href="#user"><img src="../img/user.png" alt="Projekte" class="symbol_small"/>swt14w01</a>
+					<a href="#user"><img src="../img/settings.png" alt="Projekte" class="symbol_small"/></a>
+					<a href="#user"><img src="../img/log_out.png" alt="Projekte" class="symbol_small"/></a>
 				 </div>
 				
 				<div style="clear:both;">
@@ -42,28 +51,53 @@
 				</div>
 				
 				<div class="actual_content">
-					<form id="editTemplate">
-					
+				
+							
+					<form id="editTemplate" onSubmit="return redirect();">
+					<input type="hidden" name="redirect" value="index.html" />
 					ID <br/><input type="text" value=""  name="id" /><br/>
 					Description <br/><input type="text" value="" name="description" /><br/>
 					Cypher <br/><textarea value=""  name="cypher"></textarea><br/>
 					 
 					<Table border=0>
 					<TR><TD colspan="3">Optionale Paramameter</TD></TR>
-				  	<TR><TD width="100 px">Typ<br/><input type="radio" name="optionalparameter1" value="Mastercard">String<br/> 
-  												   <input type="radio" name="optionalparameter1" value="Visa">Int</TD>
-  						<TD>Name<br/><input type="text" value=""  name="name" /></TD>
-  						<TD>Wert<br/><input type="text" value=""  name="wert" /></TD></TR>
-  					<TR><TD width="100 px">Typ<br/><input type="radio" name="optionalparameter2" value="Mastercard">String<br/> 
-  												   <input type="radio" name="optionalparameter2" value="Visa">Int</TD>
-  					<TD>Name<br/><input type="text" value=""  name="name" /></TD>
-  					<TD>Wert<br/><input type="text" value=""  name="wert" /></TD></TR>
-  					<TR><TD width="100 px">Typ<br/><input type="radio" name="optionalparameter3" value="Mastercard">String<br/> 
-  												   <input type="radio" name="optionalparameter3" value="Visa">Int</TD>
-  					<TD>Name<br/><input type="text" value=""  name="name" /></TD>
-  					<TD>Wert<br/><input type="text" value=""  name="wert" /></TD></TR>
+  					<TR><TD colspan="3"><input type="button" value="-" onClick="minus();">
+					  <input type="button" value="+" onClick="plus();"></TD></TR>
+  					<TR><TD colspan="3">	
+					 <div id="dynamisch"> 
+					  </div>
+					  </TD></TR>
 					</Table>
+					<input type="submit" name ="submit" value="Speichern"><input type="button" value="Abbrechen" onclick="redirect()"><input type="button" value="Löschen" onklick="alert(Möh)">
 				  	</form>
+				  	 <script>
+					  function redirect(){
+		
+					          window.location = 'index.html'; 
+					  }
+					  
+
+					  var feld = 1;
+
+					  function plus() {
+					   if (feld <= 5) {
+					    document.getElementById("dynamisch").innerHTML +=
+					    "<Table border=0><tr><td>Typ <br/><input type='radio' name='optionalparameter " + feld +"' value='String'>String<br/><input type='radio' name='optionalparameter " + feld +"' value='Int'>Int</td><td>Name<br/><input type='text' value=''  name='name' /></td><td>Wert<br/><input type='text' value=''  name='wert' /></td></tr></table><br/>";
+					    feld++;
+					   }
+					  }
+
+					  function minus() {
+					   if (feld > 1) {
+					    feld--;
+					    document.getElementById("dynamisch").innerHTML = "";
+					    for (var zaehler = 1; zaehler < feld; zaehler++) {
+					      document.getElementById("dynamisch").innerHTML +=
+					    	  "<Table border=0><tr><td>Typ <br/><input type='radio' name='optionalparameter " + zaehler +"' value='String'>String<br/><input type='radio' name='optionalparameter " + zaehler +"' value='Int'>Int</td><td>Name<br/><input type='text' value=''  name='name' /></td><td>Wert<br/><input type='text' value=''  name='wert' /></td></tr></table><br/>";
+						    }
+					   }
+					  }
+					  </script>
 				</div>
 
 			</div>
