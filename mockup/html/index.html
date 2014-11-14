@@ -20,13 +20,22 @@
 				<img id="header_logo" src="../img/logo.png" alt="logo"/>
 				
 				<form id="search">
-				 <input type="text" value="Suchen auf JRMDS"  onfocus="(this.value == 'Suchen auf JRMDS') && (this.value = '')" onblur="(this.value == '') && (this.value = 'Suchen auf JRMDS')" />
-				 </form>
+				 <input id="search_input" type="text" value="Suchen auf JRMDS"  onfocus="(this.value == 'Suchen auf JRMDS') && (this.value = ''); this.style.color='black';" onblur="(this.value == '') && (this.value = 'Suchen auf JRMDS'); this.style.color='#d6d6d6';" />
+				 <input type="submit" id="search_button" value="">
+				 <select name="searchoption">
+					  <option selected>alle</option>
+					  <option>Gruppe</option>
+					  <option>Constrain</option>
+					  <option>Concept</option>
+					  <option>Template</option>
+				</select>
+				</form>
 				 
 				 <div id="welcome_user">
-					<a href="#user">Projekte</a>
-					<a href="#user">User1201201</a>
-					<a href="#user">Logout</a>
+					<a href="#user"><img src="../img/projects.png" alt="Projekte" class="symbol_small"/>Projekte</a>
+					<a href="#user"><img src="../img/user.png" alt="Projekte" class="symbol_small"/>swt14w01</a>
+					<a href="#user"><img src="../img/settings.png" alt="Projekte" class="symbol_small"/></a>
+					<a href="#user"><img src="../img/log_out.png" alt="Projekte" class="symbol_small"/></a>
 				 </div>
 				
 				<div style="clear:both;">
@@ -42,7 +51,18 @@
 				</div>
 				
 				<div class="actual_content">
-					Hier kommt was auch immer rein. Höhe und Breite sind nur Testwerte.
+						
+					<div class="error_message">
+						<h4>Fehler oder Hinweis</h4>
+						<div class="error_content">
+						Diese Box kann für Fehler und Hinweise verwendet werden.
+						Hinweis für Robert: Ein Button für die Suche muss nicht unbedingt sein, da man ja auch Enter drücken kann.
+						</br>
+						Erklärung der Symbole von links nach rechts:
+						Projekte, Userprofil, Einstellungen, Logout
+						</div>
+					</div>
+					
 				</div>
 
 			</div>
