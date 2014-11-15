@@ -66,7 +66,7 @@ select:hover {
 	width:420px;
 	padding-left:10px;
 	color:#d6d6d6;
-	 vertical-align:top;
+	vertical-align:top;
 	}
 #search  select {
 	 vertical-align:top;
@@ -74,9 +74,9 @@ select:hover {
 	 border:1px solid #d6d6d6;
 	 border-radius: 4px;
 	 margin:8px 0 0 10px;
-	  background: url(../img/search_down.png) no-repeat right transparent;
-	  -webkit-appearance: none;
-	  width:100px;
+	 background: url(../img/search_down.png) no-repeat right transparent;
+	 -webkit-appearance: none;
+	 width:100px;
 	}
 #search_button {
 	width:40px;
@@ -115,7 +115,7 @@ select:hover {
 .container {
 	border:1px solid #d6d6d6;
 	border-radius:8px;
-	
+	height:300px;
 	width:100%;
 	font-family:'Lato';
 
@@ -154,3 +154,25 @@ font-size:14px;
 	text-align:center;
 	color:#2f859b;
 	}
+.formfields {
+	height: 290px;
+	width: 300px;
+	margin: auto;
+	}
+.formfield {
+	height:30px;
+	padding:0;
+	margin-top:10px;
+	border:1px solid #d6d6d6;
+	border-radius: 4px;
+	width:300px;
+	padding-left:10px;
+	color:#000000;
+	}
+#submit_button {
+	height: 30px;
+	margin-top: 10px;
+	padding-right:10px;
+	padding-left:10px;
+	float:right;
+}
