@@ -52,19 +52,26 @@
 				
 				<div class="actual_content">
 				
-							
-					<form id="editTemplate">
-					<input type="hidden" name="redirect" value="index.html" />
-					ID <br/><input type="text" value=""  name="id" /><br/>
-					Description <br/><input type="text" value="" name="description" /><br/>
-					Cypher <br/><textarea value=""  name="cypher"></textarea><br/>
-					 
-					<Table border=0>
-					<TR><TD colspan="3">Optionale Paramameter</TD></TR>
-  					<TR><TD colspan="3"><input type="button" value="-" onClick="minus();">
+					<form id="EditTemplate">
+					<table style="width:95%"><tr>
+						<td><span>ID:</span></td><td><input type="text" size="60"></td>
+					</tr><tr>
+						<td><span>Description:</span></td><td><textarea rows="2" cols="60"></textarea></td>
+					</tr><tr>
+						<td><span>Cypher:</span></td><td><textarea rows="4" cols="60"></textarea></td>
+					</tr></table><br><br>
+					
+					<strong>Parameters:</strong><br>
+					<table ><tr>
+						<td>#</td><td>Integer?</td><td>Name</td><td>Value</td>
+					</tr><td>1</td><td><input type="checkbox"></td><td><input type="text" size="40"></td><td><input type="text" size="40"></td>
+					</tr><tr>
+						<td>2</td><td><input type="checkbox"></td><td><input type="text" size="40"></td><td><input type="text" size="40"></td>
+					</tr>
+  					<TR><TD colspan="4"><input type="button" value="-" onClick="minus();">
 					  <input type="button" value="+" onClick="plus();"></TD></TR>
-  					<TR><TD colspan="3">	
-					 <div id="dynamisch"> 
+  					<TR><TD colspan="4">	
+					 <div id="dynamisch" width="100%"> 
 					  </div>
 					  </TD></TR>
 					</Table>
@@ -73,24 +80,24 @@
 				  	
 				  	 <script>
 				
-				  var feld = 1;
+				  var feld = 3;
 
 					  function plus() {
-					   if (feld <= 5) {
+					   if (feld <= 7) {
 					    document.getElementById("dynamisch").innerHTML +=
-					    "<Table border=0><tr><td>Typ <br/><input type='radio' name='optionalparameter " + feld +"' value='String'>String<br/><input type='radio' name='optionalparameter " + feld +"' value='Int'>Int</td><td>Name<br/><input type='text' value=''  name='name' /></td><td>Wert<br/><input type='text' value=''  name='wert' /></td></tr></table><br/>";
+					    "<Table border=0><TR><td>"+feld+"</td><td width='45'><input type='checkbox' ></td><td><input type='text' size='40'></td><td><input type='text' size='40'></td></tr></table>";
 					    feld++;
 					   }
 					  }
 
 					  function minus() {
-					   if (feld > 1) {
+					   if (feld > 3) {
 					    feld--;
 					    document.getElementById("dynamisch").innerHTML = "";
-					    for (var zaehler = 1; zaehler < feld; zaehler++) {
+					    for (var zaehler = 3; zaehler < feld; zaehler++) {
 					      document.getElementById("dynamisch").innerHTML +=
-					    	  "<Table border=0><tr><td>Typ <br/><input type='radio' name='optionalparameter " + zaehler +"' value='String'>String<br/><input type='radio' name='optionalparameter " + zaehler +"' value='Int'>Int</td><td>Name<br/><input type='text' value=''  name='name' /></td><td>Wert<br/><input type='text' value=''  name='wert' /></td></tr></table><br/>";
-						    }
+					    	  "<Table border=0><TR><td>"+zaehler+"</td><td width='45'><input type='checkbox' ></td><td><input type='text' size='40'></td><td><input type='text' size='40'></td></tr></table>";
+							 }
 					   }
 					  }
 					  
