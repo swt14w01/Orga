@@ -269,13 +269,24 @@ font-size:14px;
 .result_item li {
 	border:none;
 	display:table;
-	width:25%;
 	float:left;
 	padding:0;
 	margin:0;
 	}	
+.item_name {
+	width:25% !important;
+	}
+.item_id {
+	width:11% !important;
+	}		
+.item_tags {
+	width:32% !important; 
+	}
+.item_description {
+	width:32% !important;
+	}
 	
-
+	
 .tag {
 	margin-right:5px;
 	padding:0px 10px;
