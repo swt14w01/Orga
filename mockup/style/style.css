@@ -328,6 +328,28 @@ font-size:14px;
 	float:right;
 }
 
+#userproperties {
+	width: 33%;
+	float:left;
+}
+
+#userdata {
+	width: 33%;
+	float: left;
+}
+
+#edit {
+	width: 33%;
+	float: left;
+}
+
+#edit_button {
+	height: 20px;
+	margin-top: 10px;
+	padding-right:10px;
+	padding-left:10px;
+	float:left;
+}
 
 .containerInnen {
   margin: 50px;
