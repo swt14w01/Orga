@@ -33,7 +33,6 @@ select:hover {
 	background-color:#ececec;
 	border-bottom:1px solid #d6d6d6;
 	height:50px;
-	position:fixed;
 	margin:0px auto;
 	padding:5px 0px;
 	color:#20241b;
@@ -111,9 +110,7 @@ select:hover {
 
 #content_wrapper {
 	width:1000px;
-	margin:0px auto;
-	position:relative;
-	top:100px;
+	margin:50px auto;
 	}
 
 	
@@ -180,13 +177,15 @@ font-size:14px;
 	}
 	
 .tab-links {
-
+	  width:20%;
+	  float:left;
 	  background:#ececec;
-	  margin:20px 0;
-	  padding:0 50px;
 	  border:1px solid #d6d6d6;
 	  border-left:none;
 	  border-right:none;
+	  border-top:none;
+	  margin:0;
+	  padding:0;
 	}
 	
     .tab-links:after {
@@ -196,16 +195,14 @@ font-size:14px;
     }
  
     .tab-links li {
-        
-        float:left;
-        list-style:none;
-		display:table;
-		width:25%;
+        list-style:none;		
+		width:100%;
+		
     }
  
         .tab-links a {
             padding:9px 0;
-            display:inline-block;
+            display:block;
 			width:100%;
 			text-align:center;
             font-size:14px;
@@ -229,7 +226,9 @@ font-size:14px;
     /*----- Content of Tabs -----*/
     .tab-content {
 		min-height:100px;
-        
+        width:80%;
+		
+		float:left;
     }
  
         .tab {
@@ -288,14 +287,14 @@ font-size:14px;
 	
 	
 .tag {
-	margin-right:5px;
-	padding:0px 10px;
-	line-height:20px;
+	margin:5px 5px 0 0 !important;
+	padding:0px 10px !important;
 	background-color:#d1f6ff;
 	color:#5dbcd3;
-	
 	border:1px solid #5dbcd3;
 	border-radius:2px;
+	display:inline !important;
+
 		}
 .tag:hover {
 	color:#5dbcd3;
@@ -326,6 +325,28 @@ font-size:14px;
 	float:right;
 }
 
+#userproperties {
+	width: 33%;
+	float:left;
+}
+
+#userdata {
+	width: 33%;
+	float: left;
+}
+
+#edit {
+	width: 33%;
+	float: left;
+}
+
+#edit_button {
+	height: 20px;
+	margin-top: 10px;
+	padding-right:10px;
+	padding-left:10px;
+	float:left;
+}
 
 .containerInnen {
   margin: 50px;
