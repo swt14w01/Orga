@@ -1,0 +1,3 @@
+Erstellen einer sauberen Anwendungsstruktur
+Einbindung einer neo4j Graphendatenbank
+Einarbeiten aller Templates und Verlinkung untereinander 

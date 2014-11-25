@@ -1,0 +1,21 @@
+USER
+
+Ist der User erfolgreich in der Datenbank eingetragen?
+Wurden alle Userdaten korrekt eingetragen?
+Funktioniert die Emailregistervalidierung?
+Bekommt man eine korrekte Email bei Passwort vergessen - Funktion?
+Funktioniert der Login und kann der User eingeloggt agieren?
+Kann ein anderer User per Link ohne Login die Berechtigungen eines anderen Users erlangen?
+Funktioniert der Logout?
+Kann man Userdaten korrekt bearbeiten?
+Können User ausschließlich von Administratoren gelöscht werden?
+Werden alle Daten des Users aus der Datenbank entfernt?
+Wird das Löschen vom letzten vorhandenen Administrator unterbunden?
+
+
+
+XML
+
+Kommt eine Fehlermeldung bei nichtkorrekten URI Verlinkungen bzw. lokalem Pfad?
+Kommt es bei Umwandlung von XML zu Objekten und Objekten zu XML zu dergleichen Datei wie am Anfang?
+
