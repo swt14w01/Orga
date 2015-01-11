@@ -1,0 +1,9 @@
+Szenario 8: Regel/Gruppe löschen
+
+Möchte ein Projektmitglied eine Regel oder eine Regelgruppe aus seinem Projekt löschen, muss er auf der Webseite eingeloggt sein und sein Projekt ausgewählt haben.
+Das Mitglied kann dann die Regeln und Gruppen seines Projektes anwählen und über einen Löschenbutton herauslöschen. 
+Eine Popupfenster öffnet sich und zeigt alle Gruppen an, die auf die zu löschenden Gruppen und Regeln verweisen und somit beeinflußt werden würden.
+Bestätigt das Projektmitglied in diesem Fenster das Löschen, werden die ausgewählten Gruppen und Regeln gelöscht.
+Bricht das Mitglied den Löschvorgang ab, schließt sich das Popupfenster. Das Mitglied gelangt zurück zu den ausgewählten Gruppen und Regeln.
+
+

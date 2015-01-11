@@ -16,6 +16,5 @@ Wird das Löschen vom letzten vorhandenen Administrator unterbunden?
 
 XML
 
-Kommt eine Fehlermeldung bei nichtkorrekten URI Verlinkungen bzw. lokalem Pfad?
 Kommt es bei Umwandlung von XML zu Objekten und Objekten zu XML zu dergleichen Datei wie am Anfang?
 
