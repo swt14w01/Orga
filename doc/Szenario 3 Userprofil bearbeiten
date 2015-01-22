@@ -1,0 +1,7 @@
+Userprofil bearbeiten
+Jeder registrierter User hat ein Profil, welches vom Admin und dem User bearbeitet werden kann. 
+Einzusehen ist das Profil, mitsamt den Projektzugehörigkeiten, von jedem anderen User. 
+Dazu muss man auf den Benutzernamen des Users klicken. Dort finden dann die User mit entsprechenden Berechtigungen 
+den Bearbeiten- Button.
+User können ihren Namen und das Passwort ändern, danach mit dem Button Bestätigen und gelangen wieder ins Profil. 
+

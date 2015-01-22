@@ -1,0 +1,9 @@
+1. Sprint bis Montag 01.12.14
+
+Erstellen einer sauberen Anwendungsstruktur
+Einbindung einer neo4j Graphendatenbank
+Einarbeiten aller Templates und Verlinkung untereinander
+Ausgabe Java Objekte mit Thymeleaf
+Prototyp Login Usermanagement Accessmangement
+Export XML aus einem Set von Komponenten und Testfälle
+JRMDS Main Controller
